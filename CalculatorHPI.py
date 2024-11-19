@@ -40,7 +40,7 @@ def calculate_substraction(base_number1, base_number2):
     hypothetical_substraction = hypothetical_number1 - hypothetical_number2
     return hypothetical_substraction
 
-# Function to calculate the multiplication of two numberss
+# Function to calculate the multiplication of two numbers
 def calculate_multiplication(base_number1, base_number2):
     # Set the numbers to calculate the multiplication of
     hypothetical_number1 = base_number1
