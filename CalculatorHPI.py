@@ -131,10 +131,13 @@ if __name__ == "__main__":
         number2 = float(input("Insert another number to calculate the "
                               "division: "))
         # Check if the division could be calculated
-        divd12 = calculate_division(number1, number2)[0]
-        rest12 = calculate_division(number1, number2)[1]
-        # Show a message with the original numbers and the result
-        print("The division of", number1, "and", number2, "is", divd12,
+        if number2 == 0:
+            print("Numbers can't be divided by zero.")
+        else:
+            divd12 = calculate_division(number1, number2)[0]
+            rest12 = calculate_division(number1, number2)[1]
+            # Show a message with the original numbers and the result
+            print("The division of", number1, "and", number2, "is", divd12,
               ", with a rest of", rest12)
     
     elif operation == "EXP":
